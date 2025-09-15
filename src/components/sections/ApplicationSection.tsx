@@ -17,7 +17,7 @@ const ApplicationSection = () => {
     {
       icon: FileText,
       title: "Application Materials",
-      description: "Brief personal statement, CV/resume, and previous project examples (if available)."
+      description: "CV/resume, and previous project examples (if available)."
     }
   ];
 

@@ -22,7 +22,7 @@ const Header = () => {
               <Brain className="w-6 h-6 text-neural-primary" />
             </div>
             <span className="ml-3 text-xl font-bold text-foreground">
-              Fortriss x Neurotum
+              Fortiss x Neurotum
             </span>
           </div>
 

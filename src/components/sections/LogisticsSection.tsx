@@ -36,7 +36,7 @@ const LogisticsSection = () => {
     {
       icon: MapPin,
       title: "Location",
-      details: ["Fortriss Headquarters", "Highlight Towers, Munich", "In-person event"]
+      details: ["Fortiss Headquarters", "Highlight Towers, Munich", "In-person event"]
     },
     {
       icon: Clock,
@@ -162,7 +162,7 @@ const LogisticsSection = () => {
                   <div className="w-2 h-2 bg-neural-primary rounded-full mt-3 mr-4 flex-shrink-0" />
                   <div>
                     <span className="font-semibold text-foreground">Where:</span>
-                    <span className="text-muted-foreground ml-2">Fortriss Headquarters, Highlight Towers, Munich, Germany</span>
+                    <span className="text-muted-foreground ml-2">Fortiss Headquarters, Highlight Towers, Munich, Germany</span>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -294,14 +294,14 @@ const LogisticsSection = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-neural-primary mt-1 flex-shrink-0" />
                 <div>
-                  <div className="font-semibold text-foreground">Fortriss Headquarters</div>
+                  <div className="font-semibold text-foreground">Fortiss Headquarters</div>
                   <div className="text-muted-foreground">Highlight Towers</div>
                   <div className="text-muted-foreground">Munich, Germany</div>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-gradient-neural/10 rounded-lg border border-primary/20">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">In-Person Event:</strong> Join us at the innovative Fortriss headquarters 
+                  <strong className="text-foreground">In-Person Event:</strong> Join us at the innovative Fortiss headquarters 
                   in Munich's iconic Highlight Towers for an immersive hackathon experience.
                 </p>
               </div>
