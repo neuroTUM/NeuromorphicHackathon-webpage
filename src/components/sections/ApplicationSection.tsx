@@ -110,8 +110,10 @@ const ApplicationSection = () => {
           </p>
           
           <div className="flex justify-center mb-8">
-            <Button variant="hero" size="xl">
-              Submit Application
+            <Button variant="hero" size="xl" asChild>
+              <a href="https://tally.so/r/wQGoB8" target="_blank" rel="noopener noreferrer">
+                Submit Application
+              </a>
             </Button>
           </div>
 

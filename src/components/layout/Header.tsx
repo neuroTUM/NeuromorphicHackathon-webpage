@@ -41,8 +41,10 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button variant="neural" size="sm">
-              Apply Now
+            <Button variant="neural" size="sm" asChild>
+              <a href="https://tally.so/r/wQGoB8" target="_blank" rel="noopener noreferrer">
+                Apply Now
+              </a>
             </Button>
           </div>
 
@@ -70,8 +72,10 @@ const Header = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button variant="neural" size="sm" className="w-full">
-                  Apply Now
+                <Button variant="neural" size="sm" className="w-full" asChild>
+                  <a href="https://tally.so/r/wQGoB8" target="_blank" rel="noopener noreferrer">
+                    Apply Now
+                  </a>
                 </Button>
               </div>
             </nav>

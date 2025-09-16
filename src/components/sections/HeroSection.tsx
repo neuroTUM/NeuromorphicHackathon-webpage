@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/enhanced-button";
 import { Brain, Zap, Users } from "lucide-react";
 import neuralHero from "@/assets/neural-hero.jpg";
+import neuroTumLogo from "@/assets/neurotum-white-removebg-preview.png";
+import fortissLogo from "@/assets/Logo_fortiss_RGB_blue.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero pt-16">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -31,15 +33,39 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-20 max-w-6xl mx-auto px-6 text-center">
+      <div className="relative z-20 max-w-6xl mx-auto px-6 text-center pt-8 sm:pt-12 md:pt-16">
         <div className="mb-8 flex justify-center">
-          <div className="p-4 rounded-full bg-gradient-card border border-primary/20 shadow-glow animate-float">
-            <Brain className="w-12 h-12 text-neural-primary" />
+          <div className="flex items-center gap-4 md:gap-8">
+            <a 
+              href="https://www.fortiss.org/en/research/fields-of-competence/detail/neuromorphic-computing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity duration-300"
+            >
+              <img 
+                src={fortissLogo} 
+                alt="Fortiss logo" 
+                className="h-16 sm:h-20 md:h-24 lg:h-32 w-auto object-contain"
+              />
+            </a>
+            <div className="w-px h-12 sm:h-14 md:h-16 lg:h-20 bg-primary/20"></div>
+            <a 
+              href="https://www.neurotum.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity duration-300"
+            >
+              <img 
+                src={neuroTumLogo} 
+                alt="NeuroTUM logo" 
+                className="h-16 sm:h-20 md:h-24 lg:h-32 w-auto object-contain"
+              />
+            </a>
           </div>
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-neural bg-clip-text text-transparent">
-          Neuromorphic
+          Munich Neuromorphic
           <br />
           <span className="text-4xl md:text-6xl">Hackathon</span>
         </h1>
@@ -50,9 +76,11 @@ const HeroSection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <Button variant="hero" size="xl" className="group">
-            Apply Now
-            <Zap className="ml-2 w-5 h-5 group-hover:animate-neural-pulse" />
+          <Button variant="hero" size="xl" className="group" asChild>
+            <a href="https://tally.so/r/wQGoB8" target="_blank" rel="noopener noreferrer">
+              Apply Now
+              <Zap className="ml-2 w-5 h-5 group-hover:animate-neural-pulse" />
+            </a>
           </Button>
           <Button variant="neural-outline" size="xl" asChild>
             <a href="https://www.fortiss.org/karriere/munich-neuromorphic-hackathon" target="_blank" rel="noopener noreferrer">

@@ -36,7 +36,7 @@ const LogisticsSection = () => {
     {
       icon: MapPin,
       title: "Location",
-      details: ["Fortiss Headquarters", "Highlight Towers, Munich", "In-person event"]
+      details: ["Fortiss", "Highlight Towers, Munich", "In-person event"]
     },
     {
       icon: Clock,
@@ -46,7 +46,7 @@ const LogisticsSection = () => {
     {
       icon: Wifi,
       title: "What's Provided",
-      details: ["Neuromorphic hardware access", "Mentorship from experts", "Meals & refreshments"]
+      details: ["Neuromorphic hardware access", "Mentorship from experts", "Snacks & refreshments", "Premium workspaces with view of Alps"]
     }
   ];
 
@@ -54,11 +54,11 @@ const LogisticsSection = () => {
     "Friday Nov 7": [
       { time: "09:00", event: "Doors Open", speaker: "fortiss" },
       { time: "09:30", event: "Welcome by fortiss and NeuroTUM", speaker: "Dr. Axel von Arnim, NeuroTUM" },
-      { time: "10:15", event: "Welcome by Next Generation AI Computing", speaker: "LMU" },
-      { time: "10:35", event: "Welcome by STANCE neuromorphic ecosystem", speaker: "Fraunhofer" },
-      { time: "11:15", event: "Neuromorphic Computing for Industrial Use Cases", speaker: "Neumeier, Huber, Kannan (fortiss)" },
-      { time: "12:00", event: "Industry Highlight Talk", speaker: "Simi GmbH (ZF-Gruppe)" },
-      { time: "14:00", event: "Investigating Drone Detection from Aerial Platform", speaker: "DLR" },
+      { time: "10:15", event: "Welcome by Next Generation AI Computing", speaker: "Prof. Gitta Kutyniok, LMU" },
+      { time: "10:40", event: "Welcome by STANCE neuromorphic ecosystem", speaker: "Dr. Fábio Schittler, Fraunhofer ITWM" },
+      { time: "11:15", event: "Neuromorphic Computing for Industrial Use Cases", speaker: "Michael Neumeier, Thomas Huber, Priya Kannan, fortiss" },
+      { time: "11:45", event: "Movement analysis for sports", speaker: "Nils Kazinski, Simi GmbH (ZF group)" },
+      { time: "14:00", event: "Investigating Drone Detection from Aerial Platform", speaker: "Daniel da Silva Justino, DLR Institute of Flight Systems" },
       { time: "14:45", event: "Hackathon Topics & Pitch Presentation", speaker: "fortiss, NeuroTUM" },
       { time: "19:30", event: "Day End", speaker: "" }
     ],
@@ -76,6 +76,7 @@ const LogisticsSection = () => {
     ],
     "Wednesday Nov 12": [
       { time: "09:00", event: "Pitch Preparation", speaker: "" },
+      { time: "12:00", event: "Pizza lunch by fortiss", speaker: "" },  
       { time: "13:30", event: "Team Presentations", speaker: "Group Representatives" },
       { time: "14:30", event: "Voting", speaker: "fortiss, NeuroTUM, Companies" },
       { time: "15:00", event: "Prize Nomination", speaker: "Dr. Axel von Arnim, NeuroTUM" },
@@ -162,14 +163,14 @@ const LogisticsSection = () => {
                   <div className="w-2 h-2 bg-neural-primary rounded-full mt-3 mr-4 flex-shrink-0" />
                   <div>
                     <span className="font-semibold text-foreground">Where:</span>
-                    <span className="text-muted-foreground ml-2">Fortiss Headquarters, Highlight Towers, Munich, Germany</span>
+                    <span className="text-muted-foreground ml-2">Fortiss, Highlight Towers, Mies-van-der-Rohe-Strasse 6, 80807 Munich</span>
                   </div>
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-neural-primary rounded-full mt-3 mr-4 flex-shrink-0" />
                   <div>
                     <span className="font-semibold text-foreground">Challenges:</span>
-                    <span className="text-muted-foreground ml-2">3 industry challenges from leading companies (more details soon...)</span>
+                    <span className="text-muted-foreground ml-2">3 industry challenges from leading companies</span>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -183,7 +184,7 @@ const LogisticsSection = () => {
                   <div className="w-2 h-2 bg-neural-primary rounded-full mt-3 mr-4 flex-shrink-0" />
                   <div>
                     <span className="font-semibold text-foreground">Provided:</span>
-                    <span className="text-muted-foreground ml-2">Neuromorphic hardware access, expert mentorship, and all meals & refreshments</span>
+                    <span className="text-muted-foreground ml-2">Neuromorphic hardware access, expert mentorship, snacks & refreshments and premium workspaces with a view of the Alps</span>
                   </div>
                 </li>
               </ul>
@@ -294,15 +295,14 @@ const LogisticsSection = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-neural-primary mt-1 flex-shrink-0" />
                 <div>
-                  <div className="font-semibold text-foreground">Fortiss Headquarters</div>
+                  <div className="font-semibold text-foreground">Fortiss</div>
                   <div className="text-muted-foreground">Highlight Towers</div>
-                  <div className="text-muted-foreground">Munich, Germany</div>
+                  <div className="text-muted-foreground">Mies-van-der-Rohe-Strasse 6, 80807 Munich</div>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-gradient-neural/10 rounded-lg border border-primary/20">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-foreground">In-Person Event:</strong> Join us at the innovative Fortiss headquarters 
-                  in Munich's iconic Highlight Towers for an immersive hackathon experience.
+                  <strong className="text-foreground">In-Person Event:</strong> Join us in Munich's iconic Highlight Towers for an immersive hackathon experience.
                 </p>
               </div>
             </div>
@@ -318,10 +318,6 @@ const LogisticsSection = () => {
               <li className="flex items-center">
                 <div className="w-2 h-2 bg-neural-secondary rounded-full mr-3" />
                 7 minutes walk from station
-              </li>
-              <li className="flex items-center">
-                <div className="w-2 h-2 bg-neural-secondary rounded-full mr-3" />
-                Parking available in building garage
               </li>
             </ul>
           </div>
